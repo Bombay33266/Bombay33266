@@ -15,9 +15,9 @@ You can click the Preview link to take a look at your changes.
                      "Action": [
                          "lambda:ListFunctions",
                          "lambda:GetFunction",
-                         "lambda:ListAliases",
-                         "lambda:GetAccountSettings"
-                     ],
+                         ":ListAliases",
+                         ":GetAccountSettings"
+                     ],https://docs.snyk.io/getting-started/create-a-snyk-account
                      "Resource": "*"
                  }
              ]
