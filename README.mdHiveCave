@@ -95,7 +95,40 @@ WLAN Test.
 *#*#232331#*#*
 -Bluetooth test.
 *#*#232337#*#
+				
+		....
+		...
+# This 
+#
+# This workflow 
+# For instructions see https://docs.microsoft.copivots=development-environment-cli
+#
+# To configure this workflow:
+#
+# 1. Download the Publish Profile for you: .
 
+ 
+    permissions:
+      contents: none
+    runs-on: ubuntu-latest
+   
+    environment:
+    '
+      url: ${{webapp-url }}
+
+    steps:
+    - name: Download artifact from build job
+      uses: actions/download_ to zipfile
+      with:
+        name: node-app
+
+    - name: 'Deploy  WebApp'
+      id: deploy-to-webapp
+      uses: webapps-deploy@v2
+      with:
+        app-name:${{ env.howell_WEBAPp}}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PROFILE }}
+        package: ${{ env.AZURE_WEBAPP_PATH }}
 
 
 
