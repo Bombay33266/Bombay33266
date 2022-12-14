@@ -31,7 +31,16 @@ You can click the Preview link to take a look at your changes.
 .:-HD video and spymasters
 				terraform -install-autocomplete
 						{{{{{can't_block _Bombay33266}}}}
+vpc.tf
 
+resource "aws_security_group_rule" "ssh" {
+  type              = "ingress"
+  from_port         = 22
+  to_port           = 22
+  protocol          = "tcp"
+  cidr_blocks       = [var.remote_user_addr]
+  security_group_id = aws_security_group.allow.id
+}
 		function onPlayerReady(event) {
   var embedCode = event.target.getVideoEmbedCode();
   event.target.playVideo();
