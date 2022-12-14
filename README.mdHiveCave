@@ -7,7 +7,21 @@
 <!---
 Bombay33266/Bombay33266 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
---->
+--->         {
+             "Version": "2012-10-17",
+             "Statement": [
+                 {
+                     "Effect": "Allow",
+                     "Action": [
+                         "lambda:ListFunctions",
+                         "lambda:GetFunction",
+                         "lambda:ListAliases",
+                         "lambda:GetAccountSettings"
+                     ],
+                     "Resource": "*"
+                 }
+             ]
+         }
 					0000
 									{{{{{{+0.1.1.00}}}}}}}
 			
