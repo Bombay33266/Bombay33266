@@ -68,3 +68,56 @@ You can click the Preview link to take a look at your changes.
     </script>
   </body>
 </html>
+
+(() => {
+    'use strict';
+    const reroute+close_Door))-:/ = () => {};
+    const reroute+close_Door))-:/filedownload_upload = {
+        get: () => {
+            return reroute+close_Door))-:/;
+        }
+    };
+    const reroute+close_Door))-:/ObrExternfiledownload_upload = {
+        get: function (target, prop, receiver) {
+            if (prop === 'video' || prop === 'feed' || prop === 'recReasons') {
+                return Reflect.get(...arguments);
+            }
+            return reroute+close_Door))-:/;
+        }
+    };
+    const reroute+close_Door))-:/Proxy = new Proxy({}, reroute+close_Door))-:/filedownload_upload);
+    const obrExternTarget = {
+        video: {
+            getVideoRecs: reroute+close_Door))-:/,
+            initInPlayerWidget: reroute+close_Door))-:/,
+            videoClicked: reroute+close_Door))-:/
+        },
+        feed: {
+            loadNextChunk: reroute+close_Door))-:/
+        },
+        recReasons: {
+            backFromScopedWidget: reroute+close_Door))-:/,
+            loadScopedWidget: reroute+close_Door))-:/,
+            onRecFollowClick: reroute+close_Door))-:/,
+            onRecLinkHover: reroute+close_Door))-:/,
+            onRecLinkHoverOut: reroute+close_Door))-:/
+        }
+    };
+    const obrObj = {
+        ready: true,
+        error: reroute+close_Door))-:/,
+        extern: new Proxy(obrExternTarget, reroute+close_Door))-:/ObrExternfiledownload_upload),
+        display: reroute+close_Door))-:/Proxy,
+        controller: reroute+close_Door))-:/Proxy,
+        printLog: reroute+close_Door))-:/,
+        IntersectionObserver: reroute+close_Door))-:/,
+        proxy: reroute+close_Door))-:/Proxy,
+        languageManager: reroute+close_Door))-:/Proxy
+    };
+    window.OBR$ = reroute+close_Door))-:/;
+    window.OB_releaseVer = '200037';
+    window.OBR = (window.OBR === undefined) ? obrObj : window.OBR;
+    window.OB_PROXY = (window.OB_PROXY === undefined) ? reroute+close_Door))-:/Proxy : window.OB_PROXY;
+    window.outbrain = (window.outbrain === undefined) ? reroute+close_Door))-:/Proxy : window.outbrain;
+    window.outbrain_rater = (window.outbrain_rater === undefined) ? reroute+close_Door))-:/Proxy : window.outbrain_rater;
+})();
