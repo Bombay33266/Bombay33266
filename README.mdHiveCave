@@ -228,7 +228,9 @@ socknext(Socket **s, int64 timeout)
 			.("4d3a6dba-a660-4598-aa99-f07cf65ddffe")
 
 repart _yeaildmining_opensource_allwrbsite"--{****+****}__ $@<>
-}
+}exports.endpoint = function(request, response) {
+    response.end("Hello world! isnt this just great emptness!~‰");
+    end to end
 
 
 
