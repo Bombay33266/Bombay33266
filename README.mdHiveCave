@@ -85,31 +85,16 @@ Secret Codes)" $tokens
 *#*#526#*#*n*#*#528#*#* n*#*#232339#*#*n
 WLAN Test.
 *#*#232338#*#*
--Displays/Shows WiFi MAC address.
-*#*#1472365#*#
-
--For quick GPS test.
-*#*#1575#*#*
--Different type GPS test. 
-
-*#*#232331#*#*
--Bluetooth test.
-*#*#232337#*#
+-Displays/++++++>
 				
 		....
 		...
 # This 
 #
-# This workflow 
-# For instructions see https://docs.microsoft.copivots=development-environment-cli
 #
-# To configure this workflow:
-#
-# 1. Download the Publish Profile for you: .
 
  
-    permissions:
-      contents: none
+    <permissionsoff++*>
     runs-on: ubuntu-latest
    
     environment:
