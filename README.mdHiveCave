@@ -112,10 +112,10 @@ WLAN Test.
       uses: webapps-deploy@v2
       with:
         app-name:${{ env.howell_WEBAPp}}
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PROFILE }}
-        package: ${{ env.AZURE_WEBAPP_PATH }}
+      profile: ${{ secrets_WEBAPP_PROFILE }}
+        package: ${{WEBAPP_PATH }}
 
-
+			RIFIr..##
 
 
 
